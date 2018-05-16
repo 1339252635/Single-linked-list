@@ -1,0 +1,11 @@
+(1)定义学生成绩链表结点结构类型，以xscjList和*XscjLink命名，数据域：学号NO、姓名Name、手机号MTel、邮箱地址Email、籍贯 BornAddr、A分成绩AScore、B分成绩BScore，指针域：*next；
+(2)实现创建学生成绩链表函数void Build(XscjLink &T)，输入学号、姓名、手机号、邮箱地址、籍贯、A分成绩、B分成绩，建议用文件操作来输入数据；
+(3)实现函数void Update(XscjLink T, char *Name, float *ScoreA)，将姓名为Name的学生的A分成绩改为ScoreA；
+(4)实现输出学生成绩信息void OutPut(XscjLink T)，输出所有学生的学号、姓名、手机号、邮箱地址、籍贯、A分成绩、B分成绩；
+(5) 实现函数void Insert(XscjLink T, char *Name, char *No)，插入学号为NO，姓名为Name学生信息,将链表中学号≤NO的结点放到该结点的前面，将学号>NO的结点放到该结点后面；
+(6)实现函数void Sort(XscjLink T)，将该学生按照B分成绩进行非递减排序；
+(7)实现函数void Merge(XscjLink &T1, XscjLink &T2)，将两个按B分成绩非递减排序的学生成绩单合并为一个按B分成绩非递增排序的通讯录，B分成绩相同且学号相同的成绩记录在结果中只保留一个；要求算法的时间复杂度不超过两个链表的长度之和O(m+n)；
+(8)实现函数int Count(XscjLink T)；统计籍贯是“广州”的学生人数；
+(9)实现函数void MoveK(XscjLink T, int k)，将学生成绩链表中倒数第k个结点之后的所有结点移到头结点后面（保持结点间的先后顺序），注意：严禁采用先计算链表长度n再减k（即n-k）的方法；要求算法的时间复杂度不超过个链表的长度O(n)；
+(10)实现函数void ReverseN(XscjLink T)，将学生成绩链表的正中间位置结点之后的全部结点倒置，注意：严禁采用先计算链表长度n再除以2（即n/2）的方法；要求算法的时间复杂度不超过个链表的长度O(n)；
+(11)主控函数main()调用以上函数，分别输出（2）、（3）、（5）、（6）、（7）、（8）、（9）（10）处理后的链表内容、输出籍贯是“广州”的学生人数。
